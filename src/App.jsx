@@ -5,6 +5,10 @@ import { useTypingEffect } from "./hooks/CustomHooks";
 import Navbar from "./layouts/Navbar";
 import Hero from "./layouts/Home";
 import Skills from "./layouts/Skills";
+import Projects from "./layouts/Projects";
+import Journey from "./layouts/Journey";
+import Contact from "./layouts/Contact";
+import Footer from "./layouts/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -35,6 +39,10 @@ function App() {
       <Navbar activeSection={activeSection} PRIMARY_TEXT_GRADIENT={PRIMARY_TEXT_GRADIENT} />
       <Hero typedText={typedText} />
       <Skills />
+      <Projects />
+      <Journey />
+      <Contact />
+      <Footer />
     </div>
   );
 }
