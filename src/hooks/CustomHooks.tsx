@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState , useRef } from "react";
 
 /* Typing Animation Hook */
 export function useTypingEffect(words, typingSpeed = 100, pause = 1500) {
@@ -31,3 +31,17 @@ export function useTypingEffect(words, typingSpeed = 100, pause = 1500) {
 
   return text;
 } 
+
+/* Scroll Animation Hook */
+export function useScrollAnimation() {
+  const ref = useRef(null);
+  const [visible, setVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0.1 });
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return [ref, visible];
+}
