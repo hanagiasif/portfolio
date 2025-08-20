@@ -22,7 +22,7 @@ export const portfolioData = {
     resume: resume,
     github: "https://github.com/hanagiasif",
     linkedin: "https://www.linkedin.com/in/asif-ahmed-hanagi-2096921b9/",
-    portfolio: "https://mohammed-sameer-inamdar.github.io/portfolio/",
+    portfolio: "https://hanagiasif.github.io/portfolio/",
     contact: {
         email: "asifahmedhanagi01@gmail.com",
         phone: "+91 9481637908"

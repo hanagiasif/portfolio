@@ -6,8 +6,7 @@
 
 - Responsive UI with React.js + Tailwind CSS
 - Projects showcase with live demo links
--
--
+- Hosted on Github
 
 ## Tech Stack
 
@@ -17,4 +16,4 @@
 
 ## Live Demo
 
-👉
+👉[View Portfolio](https://hanagiasif.github.io/portfolio/) 
