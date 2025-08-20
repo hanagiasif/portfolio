@@ -4,6 +4,7 @@ import { portfolioData } from "./data/textData";
 import { useTypingEffect } from "./hooks/CustomHooks";
 import Navbar from "./layouts/Navbar";
 import Hero from "./layouts/Home";
+import Skills from "./layouts/Skills";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
@@ -33,6 +34,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white scroll-smooth">
       <Navbar activeSection={activeSection} PRIMARY_TEXT_GRADIENT={PRIMARY_TEXT_GRADIENT} />
       <Hero typedText={typedText} />
+      <Skills />
     </div>
   );
 }
