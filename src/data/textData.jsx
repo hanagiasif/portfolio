@@ -102,8 +102,8 @@ export const portfolioData = {
         {
             title: "Portfolio Website",
             description: "Modern personal portfolio with responsive design, animations, and interactive UI built using React, Tailwind CSS, and Vite.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/portfolio",
-            demo: "https://mohammed-sameer-inamdar.github.io/portfolio/"
+            github: "https://github.com/hanagiasif/portfolio",
+            demo: "https://hanagiasif.github.io/portfolio/"
         },
     ],
     journey: [
