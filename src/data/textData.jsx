@@ -1,11 +1,14 @@
 import {
-    FaReact, FaNodeJs, FaJava,
-    FaAndroid, FaGitAlt, FaLinux, FaDatabase,
+    FaReact, FaNodeJs, FaJava, FaLaptopCode,
+    FaAndroid, FaGitAlt, FaLinux, FaGithub,
 } from "react-icons/fa";
 import {
-    SiTailwindcss, SiJavascript, SiHtml5, SiCss3,
-    SiMongodb, SiMysql, SiPostgresql, SiPhp, SiCodeigniter
+    SiJavascript, SiHtml5, SiCss3, SiRedux,
+    SiMongodb, SiMysql, SiPhp, SiCodeigniter,
+    SiTypescript, SiGithubcopilot
 } from "react-icons/si";
+import { BsFiletypeScss } from "react-icons/bs";
+import { VscAzureDevops } from "react-icons/vsc";
 import resume from '../assets/Asif_Ahmed.pdf';
 
 export const menuItems = ["home", "skills", "projects", "journey", "contact"];
@@ -15,24 +18,27 @@ export const portfolioData = {
     name: "Asif Ahmed Hanagi",
     titles: ["Full Stack Developer", "Frontend Developer", "Node.js Developer"],
     objective:
-        "Passionate about building scalable, user-friendly applications. Skilled in full-stack development and always eager to explore new technologies. Currently working full-time at Tata Consultancy Services.",
+        "Driven by a passion for building scalable, user-friendly applications. Experienced in full-stack development and always eager to learn new technologies. Currently a full-time developer at Tata Consultancy Services.",
     resume: resume,
     github: "https://github.com/hanagiasif",
     linkedin: "https://www.linkedin.com/in/asif-ahmed-hanagi-2096921b9/",
     portfolio: "https://mohammed-sameer-inamdar.github.io/portfolio/",
     contact: {
-        email: "mohammedsameerinamdar@gmail.com",
-        phone: "+91 81474 17110"
+        email: "asifahmedhanagi01@gmail.com",
+        phone: "+91 9481637908"
     },
     skills: [
         {
             title: "Frontend",
             items: [
-                { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
-                { icon: <SiHtml5 className="text-orange-500" />, name: "HTML" },
-                { icon: <SiCss3 className="text-blue-500" />, name: "CSS" },
                 { icon: <FaReact className="text-cyan-400" />, name: "React" },
-                { icon: <SiTailwindcss className="text-sky-400" />, name: "Tailwind CSS" }
+                { icon: <SiRedux className="text-cyan-400" />, name: "Redux" },
+                { icon: <SiTypescript className="text-yellow-400" />, name: "TypeScript" },
+                { icon: <SiJavascript className="text-yellow-400" />, name: "JavaScript" },
+                { icon: <SiCss3 className="text-blue-500" />, name: "CSS" },
+                { icon: <BsFiletypeScss className="text-blue-500" />, name: "SCSS" },
+                { icon: <SiHtml5 className="text-orange-500" />, name: "HTML" },
+                { icon: <FaLaptopCode className="text-orange-500" />, name: "Responsive Web Design" }
             ]
         },
         {
@@ -56,15 +62,15 @@ export const portfolioData = {
             items: [
                 { icon: <SiMongodb className="text-green-500" />, name: "MongoDB" },
                 { icon: <SiMysql className="text-blue-500" />, name: "MySQL" },
-                { icon: <SiPostgresql className="text-indigo-500" />, name: "PostgreSQL" },
-                { icon: <FaDatabase className="text-gray-300" />, name: "MS SQL" }
             ]
         },
         {
             title: "Tools",
             items: [
                 { icon: <FaGitAlt className="text-orange-500" />, name: "Git" },
-                { icon: <FaLinux className="text-yellow-500" />, name: "Linux" }
+                { icon: <FaGithub className="text-gray-500" />, name: "Github" },
+                { icon: <VscAzureDevops className="text-blue-500" />, name: "Azure" },
+                { icon: <SiGithubcopilot className="text-green-500" />, name: "Github Copilot" },
             ]
         }
     ],
