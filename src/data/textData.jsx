@@ -76,34 +76,27 @@ export const portfolioData = {
     ],
     projects: [
         {
-            title: "Repfabric CRM Integration",
-            description: "I contributed to the development of the Repfabric project, a comprehensive customer relationship management (CRM) system built using JavaServer Faces (JSF). The primary objective of this project was to streamline sales processes, enhance customer interaction, and improve overall sales management efficiency.",
-            github: null,
-            demo: null,
-            featured: true
-        },
-        {
-            title: "Hospitality Management System",
-            description: "A comprehensive hospitality management system built using React, Node.js, Express.js, and MongoDB. Features user authentication, reservation management.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/hospitality",
+            title: "Taskify",
+            description: "Taskify is a React and TypeScript-based todo application that allows users to add, filter, update, and delete tasks. It features a user-friendly interface and efficient state management.",
+            github: "https://github.com/hanagiasif/Taskify",
             demo: null
         },
         {
-            title: "Dynamic Form Builder",
-            description: "React-based drag-and-drop form creation tool allowing custom field types, sections, and real-time preview. Integrated with APIs for saving and retrieving form layouts.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/dynamicForms",
+            title: "Omnifood",
+            description: "Omnifood is a modern food delivery website built using HTML, CSS, and JavaScript. It features a responsive design, interactive UI, and is deployed on Netlify for fast and reliable access.",
+            github: "https://github.com/hanagiasif/Omnifood",
+            demo: "https://omnifood-asifh.netlify.app/"
+        },
+        {
+            title: "Youtube Clone",
+            description: "Youtube Clone is a video streaming web app built using React and CSS. It features a responsive layout, video browsing, and a user-friendly interface inspired by the original YouTube platform.",
+            github: "https://github.com/hanagiasif/youtubeClone",
             demo: null
         },
         {
-            title: "Social Media",
-            description: "A social media platform built using React, Node.js, Express.js, and MongoDB. Features user authentication, profile creation, and real-time chat functionality.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/social-medai",
-            demo: null
-        },
-        {
-            title: "Task Management App",
-            description: "React + RTK Query powered app for managing tasks with filters, sorting, authentication, and optimized performance using memoization techniques.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/taskManager",
+            title: "Task Management System",
+            description: "A task management system built with Nest.js, allowing users to create, filter, update, and delete tasks.",
+            github: "https://github.com/hanagiasif/nestjs-task-management",
             demo: null
         },
         {
@@ -112,12 +105,6 @@ export const portfolioData = {
             github: "https://github.com/Mohammed-Sameer-Inamdar/portfolio",
             demo: "https://mohammed-sameer-inamdar.github.io/portfolio/"
         },
-        {
-            title: "Know Your Rights",
-            description: "CodeIgniter powered app for understanding and complying with legal documents, ensuring compliance with laws and regulations. Providing references to the relevant laws and regulations.",
-            github: "https://github.com/Mohammed-Sameer-Inamdar/know_your_rights",
-            demo: null
-        }
     ],
     journey: [
         // EXPERIENCE
@@ -141,24 +128,24 @@ export const portfolioData = {
         // EDUCATION
         {
             type: "education",
-            title: "B.E. (ECE)",
+            title: "B.E. (Mechanical Engineering)",
             company: "B.L.D.E.A.’s V.P. Dr. P.G. Halakatti College of Engineering and Technology, VTU University",
             period: "2015 – 2019",
-            description: "Graduated with 7.65 CGPA"
+            description: "8.3 CGPA (Distinction)"
         },
         {
             type: "education",
             title: "PUC (Science)",
             company: "Secab P.U. College for Boys Vijayapur",
             period: "2013 – 2015",
-            description: "Scored 87.33% (Distinction)"
+            description: "86% (Distinction)"
         },
         {
             type: "education",
             title: "SSLC (10th)",
             company: "Iqra Urdu High School Vijayapur",
             period: "2012 – 2013",
-            description: "Scored 78.88%"
+            description: "89% (Distinction)"
         }
     ]
 };
