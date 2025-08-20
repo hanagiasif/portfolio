@@ -110,19 +110,17 @@ export const portfolioData = {
         // EXPERIENCE
         {
             type: "experience",
-            title: "Senior Software Developer",
-            company: "Indea Design Systems Pvt. Ltd",
-            period: "Apr 2021 – Present",
-            description:
-                "Collaborated on CRM and hospitality projects using JSF, React, and Node.js. Focused on performance optimization, API integration, and scalable solutions."
+            title: "Full Stack Developer",
+            company: "Tata consultancy service",
+            period: "19th May 2022 – Present",
+            description: "Working as a Full Stack Developer, building scalable web applications and APIs. Responsible for designing and developing user-friendly interfaces, integrating backend services, and collaborating with cross-functional teams to deliver high-quality solutions."
         },
         {
             type: "experience",
-            title: "Junior Software Developer (Trainee)",
-            company: "Rooman Technologies",
-            period: "Feb 2020 – Apr 2020",
-            description:
-                "Completed comprehensive Java training focusing on OOP, Data Structures, and software development best practices."
+            title: "Full Stack Developer (Trainee)",
+            company: "Triwits Technologies Pvt Ltd",
+            period: "Sept 2021 – Dec 2021",
+            description: "Built responsive Food Delivery and Real Estate web apps, developed APIs, and designed modern UIs."
         },
 
         // EDUCATION
