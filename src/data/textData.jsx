@@ -13,12 +13,12 @@ export const menuItems = ["home", "skills", "projects", "journey", "contact"];
 /* Portfolio Data */
 export const portfolioData = {
     name: "Asif Ahmed Hanagi",
-    titles: ["Full Stack Developer", "React.js Developer", "Node.js Developer", "Java Developer"],
+    titles: ["Full Stack Developer", "Frontend Developer", "Node.js Developer"],
     objective:
-        "Passionate about building scalable, user-friendly applications. Skilled in full-stack development and always eager to explore new technologies. Currently working full-time at Indea Design Systems Pvt. Ltd.",
+        "Passionate about building scalable, user-friendly applications. Skilled in full-stack development and always eager to explore new technologies. Currently working full-time at Tata Consultancy Services.",
     resume: resume,
-    github: "https://github.com/Mohammed-Sameer-Inamdar",
-    linkedin: "http://linkedin.com/in/mohammed-sameer-inamdar-031121174",
+    github: "https://github.com/hanagiasif",
+    linkedin: "https://www.linkedin.com/in/asif-ahmed-hanagi-2096921b9/",
     portfolio: "https://mohammed-sameer-inamdar.github.io/portfolio/",
     contact: {
         email: "mohammedsameerinamdar@gmail.com",
