@@ -5,7 +5,7 @@ import { portfolioData } from '../data/textData';
 const Journey = () => {
     return (
         <FadeSection id="journey">
-            <h2 className="text-3xl font-bold mb-6 text-center">My Journey</h2>
+            <h2 className="text-3xl font-bold mb-6 text-center  dark:text-black">My Journey</h2>
             <div className="relative max-w-4xl mx-auto">
                 {/* Vertical Center Line */}
                 <div className="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#ff00d4] to-[#00ddff]"></div>
@@ -31,10 +31,10 @@ const Journey = () => {
                                 <div className={`absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 w-5 h-5 rounded-full border-4 border-gray-900 bg-gradient-to-r ${dotGrad}`}></div>
                                 {/* Card */}
                                 <div className={`md:w-1/2 ${isLeft ? "md:pr-10 md:mr-auto" : "md:pl-10 md:ml-auto"} w-full`}>
-                                    <div className={`bg-gray-800 p-6 rounded-xl shadow-lg transition transform hover:-translate-y-1 ${glowClass}`}>
+                                    <div className={`bg-gray-800 dark:bg-white p-6 rounded-xl shadow-lg transition transform hover:-translate-y-1 ${glowClass}`}>
                                         <h3 className={`text-xl font-semibold ${isEducation ? "text-[#ff00d4]" : "text-[#00ddff]"}`}>{item.title}</h3>
-                                        <p className="text-white">{item.company} | {item.period}</p>
-                                        <p className="mt-2 text-gray-300 text-sm">{item.description}</p>
+                                        <p className="text-white dark:text-black">{item.company} | {item.period}</p>
+                                        <p className="mt-2 text-gray-300 dark:text-black text-sm">{item.description}</p>
                                     </div>
                                 </div>
                             </div>

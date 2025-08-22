@@ -13,12 +13,12 @@ export function FadeSection({ id, children }) {
 /* Skill Card */
 export function SkillCard({ title, skills }) {
     return (
-        <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-[#ff00d4]/40 transform hover:-translate-y-2 transition">
+        <div className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-[#ff00d4]/40 transform hover:-translate-y-2 transition dark:bg-white">
             <h3 className="text-xl font-semibold mb-4">{title}</h3>
             <div className="flex flex-wrap gap-3">
                 {skills.map((s, idx) => (
                     <div key={idx} className="flex items-center gap-2">
-                        {s.icon} <span className="text-gray-300">{s.name}</span>
+                        {s.icon} <span className="text-gray-300 dark:text-black">{s.name}</span>
                     </div>
                 ))}
             </div>

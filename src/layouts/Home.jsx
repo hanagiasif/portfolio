@@ -14,7 +14,7 @@ const Home = ({ typedText }) => {
                 {typedText}
                 <span className="border-r-2 border-[#00ddff] animate-pulse ml-1 inline-block h-6 align-middle"></span>
             </p>
-            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-400 leading-relaxed">
+            <p className="mt-4 max-w-3xl mx-auto text-center text-gray-400  dark:text-black leading-relaxed">
                 {portfolioData.objective}
             </p>
 

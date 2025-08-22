@@ -12,7 +12,17 @@ import Footer from "./layouts/Footer";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [theme, setTheme] = useState('light');
+
   const typedText = useTypingEffect(portfolioData.titles);
+
+  // Function to toggle between light and dark themes
+  const toggleTheme = () => setTheme(theme === "dark" ? "light" : "dark");
+
+  // Apply dark mode class based on theme state
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", theme === "dark");
+  }, [theme]);
 
   useEffect(() => {
     const sections = document.querySelectorAll("section, header");
@@ -35,8 +45,14 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white scroll-smooth">
-      <Navbar activeSection={activeSection} PRIMARY_TEXT_GRADIENT={PRIMARY_TEXT_GRADIENT} />
+    <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white scroll-smooth
+    dark:bg-gradient-to-b dark:from-gray-100 dark:via-gray-200 dark:to-white">
+      <Navbar
+        activeSection={activeSection}
+        PRIMARY_TEXT_GRADIENT={PRIMARY_TEXT_GRADIENT}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      />
       <Hero typedText={typedText} />
       <Skills />
       <Projects />
