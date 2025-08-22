@@ -31,7 +31,7 @@ function Navbar({ activeSection, PRIMARY_TEXT_GRADIENT, theme, toggleTheme }) {
           ))}
         </ul>
         {/* Theme Toggle Button */}
-        <div>
+        <div className="flex gap-2">
           <button
             className="p-2 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300 shadow-lg hover:scale-110"
             onClick={toggleTheme}
