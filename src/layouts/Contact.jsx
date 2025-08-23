@@ -1,8 +1,8 @@
 import React from 'react'
 import { FadeSection } from '../utils/helper'
-import { PRIMARY_BG_GRADIENT, PRIMARY_TEXT_GRADIENT } from '../constant'
+import { PRIMARY_BG_GRADIENT } from '../constant'
 import { portfolioData } from '../data/textData'
-import { FaEnvelope, FaPhone } from 'react-icons/fa'
+import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
 
 const Contact = () => {
     return (
@@ -20,15 +20,15 @@ const Contact = () => {
                 <div className="space-y-4 break-words break-all">
                     <a
                         href={`mailto:${portfolioData.contact.email}`}
-                        className="flex items-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
+                        className="flex items-center justify-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
                     >
                         <FaEnvelope className="text-[#00ddff]" /> {portfolioData.contact.email}
                     </a>
                     <a
                         href={`tel:${portfolioData.contact.phone}`}
-                        className="flex items-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
+                        className="flex items-center justify-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
                     >
-                        <FaPhone className="text-[#00ddff]" /> {portfolioData.contact.phone}
+                        <FaPhoneAlt className="text-[#00ddff]" /> {portfolioData.contact.phone}
                     </a>
                 </div>
                 <div className="mt-6 text-center">
