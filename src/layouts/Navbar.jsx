@@ -34,7 +34,7 @@ function Navbar({ activeSection, PRIMARY_TEXT_GRADIENT, theme, toggleTheme }) {
         {/* Theme Toggle Button */}
         <div className="flex gap-2">
           <button
-            className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} hover:bg-gray-700 transition-all duration-300 shadow-lg hover:scale-110`}
+            className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
             onClick={toggleTheme}
           >
             {theme === "dark" ? <RiSunFill /> : <RiMoonClearFill />}

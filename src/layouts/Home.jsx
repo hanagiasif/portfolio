@@ -30,7 +30,7 @@ const Home = ({ typedText }) => {
                     href={portfolioData.github}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300 shadow-lg hover:scale-110"
+                    className={`p-4 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
                 >
                     <FaGithub size={22} />
                 </a>
@@ -38,7 +38,7 @@ const Home = ({ typedText }) => {
                     href={portfolioData.linkedin}
                     target="_blank"
                     rel="noreferrer"
-                    className="p-4 rounded-full bg-gray-800 hover:bg-gray-700 transition-all duration-300 shadow-lg hover:scale-110"
+                    className={`p-4 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
                 >
                     <FaLinkedin size={22} />
                 </a>
