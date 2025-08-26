@@ -1,11 +1,9 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { RiSunFill } from "react-icons/ri";
-import { RiMoonClearFill } from "react-icons/ri";
+import { PRIMARY_TEXT_GRADIENT } from "../constant.jsx";
 import { menuItems, portfolioData } from "../data/textData.jsx";
-import { PRIMARY_BG_GRADIENT } from "../constant.jsx";
 
-function Navbar({ activeSection, PRIMARY_TEXT_GRADIENT, theme, toggleTheme }) {
+function Navbar({ activeSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <nav className="sticky top-0 bg-black/50 backdrop-blur-md z-50 border-b border-white/10 dark:bg-white dark:border-black/10">
@@ -31,22 +29,13 @@ function Navbar({ activeSection, PRIMARY_TEXT_GRADIENT, theme, toggleTheme }) {
             </li>
           ))}
         </ul>
-        {/* Theme Toggle Button */}
-        <div className="flex gap-2">
-          <button
-            className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
-            onClick={toggleTheme}
-          >
-            {theme === "dark" ? <RiSunFill /> : <RiMoonClearFill />}
-          </button>
-          {/* Mobile Hamburger Icon */}
-          <button
-            className={`md:hidden text-[#00ddff] text-2xl`}
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <FaTimes /> : <FaBars />}
-          </button>
-        </div>
+        {/* Mobile Hamburger Icon */}
+        <button
+          className={`md:hidden text-[#00ddff] text-2xl`}
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </button>
       </div>
 
       {/* Mobile Dropdown Menu */}

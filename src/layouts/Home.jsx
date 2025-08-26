@@ -2,7 +2,7 @@ import React from 'react'
 import { FadeSection } from '../utils/helper'
 import { portfolioData } from '../data/textData'
 import { PRIMARY_BG_GRADIENT, PRIMARY_TEXT_GRADIENT } from '../constant'
-import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaDownload } from 'react-icons/fa'
 
 const Home = ({ typedText }) => {
     return (
@@ -25,22 +25,6 @@ const Home = ({ typedText }) => {
                     className={`inline-flex items-center px-6 py-3 rounded-full ${PRIMARY_BG_GRADIENT} text-white font-semibold shadow-lg hover:scale-105 hover:shadow-xl transition-all duration-300`}
                 >
                     <FaDownload className="mr-2" /> Download Resume
-                </a>
-                <a
-                    href={portfolioData.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`p-4 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
-                >
-                    <FaGithub size={22} />
-                </a>
-                <a
-                    href={portfolioData.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`p-4 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
-                >
-                    <FaLinkedin size={22} />
                 </a>
             </div>
         </FadeSection>

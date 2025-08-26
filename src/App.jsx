@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { PRIMARY_TEXT_GRADIENT } from "./constant";
 import { portfolioData } from "./data/textData";
 import { useTypingEffect } from "./hooks/CustomHooks";
+import FloatingButtons from "./components/FloatingButtons";
 import Navbar from "./layouts/Navbar";
 import Hero from "./layouts/Home";
 import Skills from "./layouts/Skills";
@@ -48,18 +48,15 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-900 via-gray-800 to-black text-white scroll-smooth
     dark:bg-gradient-to-b dark:from-gray-100 dark:via-gray-200 dark:to-white">
-      <Navbar
-        activeSection={activeSection}
-        PRIMARY_TEXT_GRADIENT={PRIMARY_TEXT_GRADIENT}
-        theme={theme}
-        toggleTheme={toggleTheme}
-      />
+      <Navbar activeSection={activeSection} />
       <Hero typedText={typedText} />
       <Skills />
       <Projects />
       <Journey />
       <Contact />
       <Footer />
+      {/* 👇 Floating Buttons */}
+      <FloatingButtons theme={theme} toggleTheme={toggleTheme} />
     </div>
   );
 }

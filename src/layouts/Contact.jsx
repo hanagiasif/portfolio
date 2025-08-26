@@ -2,7 +2,7 @@ import React from 'react'
 import { FadeSection } from '../utils/helper'
 import { PRIMARY_BG_GRADIENT } from '../constant'
 import { portfolioData } from '../data/textData'
-import { FaEnvelope, FaPhoneAlt } from 'react-icons/fa'
+import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaPhoneAlt, FaInstagram } from 'react-icons/fa'
 
 const Contact = () => {
     return (
@@ -17,26 +17,44 @@ const Contact = () => {
                         Reach out to discuss opportunities or collaborations.
                     </p>
                 </p>
-                <div className="space-y-4 break-words break-all">
-                    <a
-                        href={`mailto:${portfolioData.contact.email}`}
-                        className="flex items-center justify-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
-                    >
-                        <FaEnvelope className="text-[#00ddff]" /> {portfolioData.contact.email}
-                    </a>
+                <div className="space-y-1 break-words break-all">
                     <a
                         href={`tel:${portfolioData.contact.phone}`}
                         className="flex items-center justify-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
                     >
                         <FaPhoneAlt className="text-[#00ddff]" /> {portfolioData.contact.phone}
                     </a>
-                </div>
-                <div className="mt-6 text-center">
                     <a
                         href={`mailto:${portfolioData.contact.email}`}
-                        className={`inline-block px-8 py-3 ${PRIMARY_BG_GRADIENT} rounded-full text-white font-semibold hover:scale-105 transition-transform shadow-lg hover:shadow-xl`}
+                        className="flex items-center justify-center gap-3 text-lg text-gray-300 dark:text-black hover:text-[#00ddff] transition"
                     >
-                        Contact Me
+                        <FaEnvelope className="text-[#00ddff]" /> {portfolioData.contact.email}
+                    </a>
+                </div>
+                <div className="mt-4 flex flex-wrap justify-center gap-4">
+                    <a
+                        href={portfolioData.facebook}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaFacebookSquare size={20} />
+                    </a>
+                    <a
+                        href={portfolioData.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaLinkedin size={20} />
+                    </a>
+                    <a
+                        href={portfolioData.instagram}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaInstagram size={20} />
                     </a>
                 </div>
             </div>
