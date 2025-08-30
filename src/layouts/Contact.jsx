@@ -2,7 +2,7 @@ import React from 'react'
 import { FadeSection } from '../utils/helper'
 import { PRIMARY_BG_GRADIENT } from '../constant'
 import { portfolioData } from '../data/textData'
-import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaPhoneAlt, FaInstagram } from 'react-icons/fa'
+import { FaEnvelope, FaFacebookSquare, FaLinkedin, FaPhoneAlt, FaInstagram, FaWhatsapp, FaTelegram } from 'react-icons/fa'
 
 const Contact = () => {
     return (
@@ -33,20 +33,36 @@ const Contact = () => {
                 </div>
                 <div className="mt-4 flex flex-wrap justify-center gap-4">
                     <a
-                        href={portfolioData.facebook}
-                        target="_blank"
-                        rel="noreferrer"
-                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
-                    >
-                        <FaFacebookSquare size={20} />
-                    </a>
-                    <a
                         href={portfolioData.linkedin}
                         target="_blank"
                         rel="noreferrer"
                         className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
                     >
                         <FaLinkedin size={20} />
+                    </a>
+                    <a
+                        href={portfolioData.whatsapp}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaWhatsapp size={20} />
+                    </a>
+                    <a
+                        href={portfolioData.telegram}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaTelegram size={20} />
+                    </a>
+                    <a
+                        href={portfolioData.facebook}
+                        target="_blank"
+                        rel="noreferrer"
+                        className={`p-2 rounded-full ${PRIMARY_BG_GRADIENT} transition-all duration-300 shadow-lg hover:scale-110 hover:shadow-xl`}
+                    >
+                        <FaFacebookSquare size={20} />
                     </a>
                     <a
                         href={portfolioData.instagram}
